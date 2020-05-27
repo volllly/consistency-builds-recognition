@@ -1,4 +1,4 @@
-# donsistency builds recognition
+# consistency builds recognition
 
 ## development
 
