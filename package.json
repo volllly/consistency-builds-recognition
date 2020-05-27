@@ -5,7 +5,7 @@
   "type": "module",
   "main": "src/main.js",
   "scripts": {
-    "test": "node test/main.js"
+    "dev": "npx snowpack dev"
   },
   "author": "Paul Volavsek <paul.volavsek@gmail.com>",
   "license": "ISC",
