@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>consistency builds recognition</title>
+</head>
+<body style="min-height: 100vh">
+  
+</body>
+<script type="module">
+  import Cbr from '../src/main.js';
+
+  
+  let cbr = new Cbr();
+
+  ['click'].map(e => document.querySelector('body').addEventListener(e, cbr.resume));
+
+  cbr.init.then(() => console.log(cbr.players));
+</script>
+</html>
