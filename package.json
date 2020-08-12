@@ -10,6 +10,7 @@
   "author": "Paul Volavsek <paul.volavsek@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "charming": "^3.0.2",
     "tone": "^13.8.25"
   },
   "devDependencies": {

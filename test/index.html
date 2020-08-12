@@ -6,14 +6,29 @@
   <title>consistency builds recognition</title>
 </head>
 <body style="min-height: 100vh">
-  
+  <div id="grains">
+    <div data-grain="0" data-here="true"/>
+    <p>On a recent hiking trip in the Salzkammergut – a beautiful resort area of lakes and mountains in the states of Salzburg, Upper Austria and Styria – the breathtaking landscapes weren’t the only thing that has remained in my memory. Guiding our way to a small lake located at 1493 m above sea-level, surrounded by mountains, were a lot of direction signs. But almost every single one was designed differently.</p>
+    <div data-grain="26" data-here="true"/>
+    <p>Navigating wasn’t a problem for us, since we were quite familiar with the area. Yet the direction signs almost had a reverse effect on orienting ourselves, bringing us to a halt every time a different sign appeared, having to reconfigure our eyes and adjusting to the newly presented forms. It was a weird learning experience: Since every signpost looked different from the previous, it was hard to identify a design pattern. The experience felt unorganised, inconsistent and, in a way, dubious. Was there something missing? Was this a paper-chase?</p>
+    <div data-grain="58" data-here="true"/>
+    <p>If presented with any pattern, it’s relatively easy to identify a deviation (for example a dot-pattern with an irregularly offset point). It’s easy to identify a problem, a missing link. The design itself tells you if it’s correct or not. The same is applicable to conceptual patterns, in this case that of an orientation system and interface.</p>
+    <div data-grain="78" data-here="true"/>
+    <p>This led me to the realisation that consistency builds recognition, and recognition builds trust. Consistency is a fundamental tool in the design process, be it for emotional design (corporate communications, e.g., branding and advertisement) or informational design (wayfinding, data-mapping, layouting, etc.). It’s a big part of what makes things feel more natural and accessible. By creating a system that builds on consistency, the results inevitably will reflect its inherent qualities (and benefits).</p>
+    <div data-grain="108" data-here="true"/>
+    <p>“Good designs oscillate between hiding and revealing themselves. Interfaces should oscillate in a controlled way between states of transparency and reflectivity.” [1] The design ought to offer a system that signals surety through consistency, while at the same time inviting personal reflection from the viewer-users. By being “aware of the medium in order to understand the experience that it is staging […]” [1], the interacting public will gain a greater insight of their current condition, as well as a heightened critical independence towards subliminal and ambiguous messaging.</p>
+    <div data-grain="140" data-here="true"/>
+    <p>For designers, this means producing work that defeats intrinsic attempts to subvert its own visual government.</p>
+    <div data-grain="146" data-here="true"/>
+  </div>
 </body>
 <script type="module">
   import Cbr from '../src/main.js';
 
-  
-  let cbr = new Cbr();
+  let cbr = new Cbr('#grains');
 
+  cbr.charm();
+  
   ['click'].map(e => document.querySelector('body').addEventListener(e, cbr.resume));
 </script>
 </html>

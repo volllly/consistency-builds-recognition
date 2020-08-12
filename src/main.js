@@ -1,4 +1,5 @@
 import Tone from 'tone';
+import charming from 'charming';
 
 class Queue {
   tasks = [];
@@ -82,8 +83,11 @@ function gaussian() {
 
 export default class Cbr {
   init = undefined;
+  element;
 
-  constructor() {
+  constructor(selector) {
+    this.element = document.querySelector(selector);
+
     this.queue = new Queue();
 
     this.init = this.queue.push(async () => {
@@ -143,6 +147,10 @@ export default class Cbr {
         }, g.grainSize + g.grainSize, g.grainSize + (1 / frequency));
       });
     }, false);
+  }
+
+  charm() {
+    charming(this.element);
   }
 
   resume = () => {
